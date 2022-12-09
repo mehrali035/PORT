@@ -3,10 +3,10 @@
 var toggler_btn = document.querySelector(".toggler-btn");
 var side_nav = document.querySelector(".side-nav");
 
-
 toggler_btn.onclick = function () {
     side_nav.classList.toggle("active");
 }
+
 
 // <==================start animation============ >
 

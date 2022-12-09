@@ -204,7 +204,8 @@
 .about-section h2::after,
 .skill-section h2::after,
 .resume-section h2::after,
-.port-section h2::after {
+.port-section h2::after ,
+.contact-section h2::after{
     content: '';
     position: relative;
     display: block;
