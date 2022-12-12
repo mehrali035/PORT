@@ -47,7 +47,7 @@
     margin-top: 15px;
 }
 
-.top-nav-box i {
+.top-nav-box a i{
     margin: 7px;
     cursor: pointer;
 }
@@ -56,17 +56,16 @@
     margin-top: 12px;
 }
 
-.side-nav .nav-icon-box i {
+.side-nav .nav-icon-box a i{
     padding: 10px;
-    background-color: rgba(110, 110, 110, 0.588);
+    background-color: rgba(255, 255, 255, 0.661);
     border-radius: 50%;
     margin-top: 30px;
 }
 
-.side-nav .nav-icon-box i:hover {
+.side-nav .nav-icon-box a i:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 15px #149ddd;
-    text-shadow: 0 0 5px #149ddd;
+    box-shadow: 0 0 15px #06a7f2;
 }
 
 .list-group-items {
@@ -117,7 +116,7 @@
 .hero-bg {
     width: 100%;
     height: 100vh;
-    background-image: url(/images/pic1.png);
+    background-image: url(/images/laptop.png);
     background-size: cover;
     background-repeat: no-repeat;
     object-fit: cover;
@@ -323,6 +322,7 @@
 }
 .port-section .port-box .port-con-box button{
     width: 100%;
+    color: #fff;
 }
 .port-section .port-box .port-con-box button:hover{
 background-color: #149ddd;
@@ -394,7 +394,60 @@ background-color: #149ddd;
     color: #149ddd;
     height: 50px;
 } 
-
+button {
+    font-family: inherit;
+    font-size: 20px;
+    background-color: #149ddd;
+    color: white;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: all 0.2s;
+  }
+  
+  button span {
+    display: block;
+    margin-left: 0.7em;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  button:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+  }
+  
+  button:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+  }
+  
+  button:hover span {
+    transform: translateX(5em);
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }
+  
+  @keyframes fly-1 {
+    from {
+      transform: translateY(0.1em);
+    }
+  
+    to {
+      transform: translateY(-0.1em);
+    }
+  }
+  
+  
 /* ========== start responsiv design =========== */
 
 @media(max-width : 991px) {
@@ -407,6 +460,9 @@ background-color: #149ddd;
 
     .hero-bg button {
         opacity: 1;
+    }
+    .hero-bg {
+        background-image: url(/images/laptop2.png);
     }
 }
 
