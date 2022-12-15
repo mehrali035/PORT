@@ -9,6 +9,17 @@ toggler_btn.onclick = function () {
 
 }
 
+// >>>>>>>> add and remove active on click =>>>>>>>>>>>>
+const list = document.querySelectorAll('li');
+
+list.forEach(el => {
+    el.addEventListener('click',function(){
+        list.forEach(bl => bl.classList.remove('active'));
+            this.classList.add('active')  
+    })
+});
+
+
 
 // <==================start animation============ >
 
@@ -18,7 +29,7 @@ var arrayindex = 0;
 var charindex = 0;
 function showtitle() {
     charindex++
-    title.innerHTML = "My skills are:         <span>" + array[arrayindex].slice(0, charindex) + "</span>";
+    title.innerHTML = "Tech stack:         <span>" + array[arrayindex].slice(0, charindex) + "</span>";
     if (charindex == array[arrayindex].length) {
         arrayindex++;
         charindex = 0;

@@ -94,6 +94,7 @@
     color: #149ddd;
 }
 
+/* active  */
 .side-nav .center-nav-box .list-group .active a,
 .side-nav .center-nav-box .list-group .active i {
     color: #149ddd;
@@ -116,7 +117,7 @@
 .hero-bg {
     width: 100%;
     height: 100vh;
-    background-image: url(/images/laptop.png);
+    background-image: url(/images/lap.png);
     background-size: cover;
     background-repeat: no-repeat;
     object-fit: cover;
@@ -253,7 +254,7 @@
 }
 
 .skill-section .progress-bar-react {
-    width: 60%;
+    width: 20%;
     background-color: #149ddd;
 
 }
