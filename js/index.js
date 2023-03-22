@@ -1,3 +1,4 @@
+
 // =============start toggler=========
 
 var toggler_btn = document.querySelector(".toggler-btn");
@@ -39,4 +40,4 @@ function showtitle() {
     }
     setTimeout(showtitle, 400)
 }
-showtitle();
+showtitle()
